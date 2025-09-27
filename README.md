@@ -6,6 +6,32 @@
 
 例如用於`ImGui`從內存中載入圖片
 
+## 更改
+
+此fork仓库与[Huan912/FastFileToBinary](https://github.com/Huan912/FastFileToBinary)的主要区别在于，基于Google C++ Style Guide对生成的头文件格式、内容等进行了一些优化
+主要是为了满足我的个人需求，至少不要把代码搞得太乱
+
+主要遵循以下条目 ：
+- [1.2. #define 防护符](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/headers.html#define)
+- [2.5. 静态和全局变量](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/scoping.html#static-and-global-variables)
+- [6.12. constexpr 用法](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/others.html#constexpr)
+- [7.1. 通用命名规则](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/naming.html#general-naming-rules)
+- [7.5. 常量命名](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/naming.html#constant-names)
+- [9.3. 空格还是制表位](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/formatting.html#id3)
+- [9.14. 预处理指令](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/formatting.html#id13)
+- [9.18. 水平留白](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/formatting.html#id17)
+
+没有遵循的条目 ：
+- [2.1. 命名空间](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/scoping.html#namespaces)
+- [8.2. 文件注释](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/comments.html#id3)
+- [8.5. 变量注释](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/comments.html#id10)
+
+不想遵循的条目 ：
+- [1.1. 自给自足的头文件](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/headers.html#self-contained-headers) “不属于头文件的文件设置为 .inc 扩展名, 并尽量避免使用.”
+
+原仓库已经遵守的条目 ：
+- [9.1. 行长度](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/formatting.html#line-length)
+
 ## 功能
 
 - 將任何檔案轉換為 C/C++ 標頭檔（.h）
