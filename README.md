@@ -13,6 +13,7 @@
 
 主要遵循以下条目 ：
 - [1.2. #define 防护符](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/headers.html#define)
+- [2.1. 命名空间](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/scoping.html#namespaces)
 - [2.5. 静态和全局变量](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/scoping.html#static-and-global-variables)
 - [6.12. constexpr 用法](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/others.html#constexpr)
 - [7.1. 通用命名规则](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/naming.html#general-naming-rules)
@@ -22,7 +23,6 @@
 - [9.18. 水平留白](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/formatting.html#id17)
 
 没有遵循的条目 ：
-- [2.1. 命名空间](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/scoping.html#namespaces)
 - [8.2. 文件注释](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/comments.html#id3)
 - [8.5. 变量注释](https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/comments.html#id10)
 

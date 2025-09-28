@@ -1,4 +1,4 @@
-import std;
+﻿import std;
 
 std::string extractFileName(const std::string& filePath) {
   size_t pos = filePath.find_last_of("/\\");
@@ -86,7 +86,7 @@ int main(int argc, char* argv[]) {
     outputFile << "#pragma once\n";  // non-standard but widely supported
     outputFile << "#ifndef\x20" << header_guard_name << "\n"
                << "#define\x20" << header_guard_name << "\n\n";
-
+    outputFile << "namespace rawdata {\n";
     std::string arrayName = GenerateArrayName(argv[i]);
     outputFile << "inline static constexpr unsigned char " << arrayName << "["
                << fileSize << "] = {\n\x20\x20";
@@ -107,7 +107,8 @@ int main(int argc, char* argv[]) {
       }
     }
 
-    outputFile << "\n};\n\n";
+    outputFile << "\n};\n";
+    outputFile << "} // namespace rawdata\n\n";
     outputFile << "#endif\x20\x20//\x20" << header_guard_name << "\n";
     inputFile.close();
     outputFile.close();
