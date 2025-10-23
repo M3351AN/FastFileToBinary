@@ -61,7 +61,9 @@ FastFileToBinary image.png sound.wav data.bin
 
 生成的標頭檔包含以下格式的陣列宣告
 ```cpp
-unsigned char Binary_filename_data[] = {
+namespace rawdata {
+inline static constexpr unsigned char Binary_filename_data[] = {
     0xFF, 0x4A, 0x51, 0x54, ...
 };
+}
 ```
